@@ -4,5 +4,3 @@ const dev = process.env.NODE_ENV === 'development'
 export function route(path: string): string {
   return dev ? 'http://localhost:3030/api' + path : 'https://api.csplan.co' + path
 }
-
-export default route

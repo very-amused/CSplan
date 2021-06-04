@@ -23,14 +23,12 @@ export default {
       progress(),
       replace({
         'process.browser': true,
-        'process.env.NODE_ENV': JSON.stringify(mode),
-        preventAssignment: true
+        'process.env.NODE_ENV': JSON.stringify(mode)
       }),
       svelte({
         compilerOptions: {
           dev,
-          hydratable: true, 
-          sourcemap: true
+          hydratable: true
         },
         preprocess: preprocess(),
         emitCss: true
@@ -59,8 +57,7 @@ export default {
       progress(),
       replace({
         'process.browser': false,
-        'process.env.NODE_ENV': JSON.stringify(mode),
-        preventAssignment: true
+        'process.env.NODE_ENV': JSON.stringify(mode)
       }),
       svelte({
         compilerOptions: {

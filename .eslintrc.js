@@ -55,6 +55,7 @@ module.exports =  {
         delimiter: 'none'
       }
     }],
+    '@typescript-eslint/no-namespace': 'off'
     // Unicorn rules
     'unicorn/filename-case': ['error', {
       case: 'kebabCase'
